@@ -9,7 +9,7 @@ import Client from "./Client";
 const ClientSection=()=>{
     const Clients=[ClientImg1,ClientImg2,ClientImg3,ClientImg4,ClientImg5]
     return (
-        <section className=" lg:flex  md:flex xl:flex 2xl:flex sm:flex flex-col items-center justify-center   gap-16 py-40"> 
+        <section className=" lg:flex  md:flex xl:flex 2xl:flex sm:flex sm:flex-row flex-col items-center justify-center   gap-16 py-40"> 
             {Clients.map((elem)=> <Client imgSrc={elem}/>)}
         </section>
     )
