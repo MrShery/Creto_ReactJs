@@ -10,7 +10,7 @@ import AdvanAfter2 from "../assets/triangle-asymmetrical-divider-inverse.png";
 function Advantage() {
   return (
     <div
-      className="w-full h-[90vh] sm:h-[80vh] relative flex flex-col gap-20 justify-center items-center myMask  "
+      className="w-full h-[90vh] sm:h-[80vh] relative flex flex-col gap-20 justify-center items-center myMask   "
       style={{
         backgroundImage: `linear-gradient( rgba(25, 35, 48, .699),rgba(25, 35, 48, .61)),url(${AdvanBgImg2})`,
         backgroundPosition: "center",

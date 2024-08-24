@@ -93,7 +93,7 @@ export const Hero = () => {
         </div>
       </div>
       <div className=" relative  overflow-hidden flex flex-col ">
-        <div className="  pt-3  flex flex-col items-center h-60 lg:h-60 md:h-60 sm:h-52 translate-x-5 sm:translate-x-10 sm:px-10 text-center overflow-hidden ">
+        <div className="  pt-3  flex flex-col items-center h-60 lg:h-64 md:h-60 sm:h-52 translate-x-5 sm:translate-x-10 sm:px-10 text-center overflow-hidden ">
           <div className=" flex flex-col  items-center absolute  md:px-10 text-center overflow-hidden ">
             <AnimatePresence>
               {showTitle && (

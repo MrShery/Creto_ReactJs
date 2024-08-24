@@ -5,7 +5,7 @@ import BannerHoverEffect from "./BannerHoverEffect";
 function BannerCard({ imgSrc, itemKey }) {
   return (
     <div
-      className={`"relative lg:w-[20vw] md:w-[20vw] sm:w-[25vw] w-[50vw]  lg:h-[20vw] md:h-[20vw] sm:h-[25vw] h-[40vw] group "`}
+      className={`"relative lg:w-[19.7vw] md:w-[20vw] sm:w-[25vw] w-[50vw]  lg:h-[20vw] md:h-[20vw] sm:h-[25vw] h-[40vw] group "`}
       style={{
         backgroundImage: `url(${imgSrc})`,
         backgroundPosition: "center",
