@@ -31,7 +31,7 @@ function FeedBackSection() {
       backgroundSize: "cover",
     }}>
       <div className={`" ${windowWidth>=1000?"w-[85vw]":"w-[90vw] "} relative "`}>
-      <div className="py-10 text-[43px] font-extrabold text-white">
+      <div className="py-10 text-[25px] md:text-[43px] font-extrabold text-white">
       <Heading content={"Feedback"}/>
       </div>
     <div className="relative">

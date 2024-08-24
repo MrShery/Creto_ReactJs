@@ -25,13 +25,13 @@ const SubscribeSecion = () => {
           and sales.
         </p>
       </div>
-        <div className="flex sm:gap-4 sm:justify-start justify-center  items-center mt-2  ">
+        <div className="flex gap-2 sm:gap-4 sm:justify-start justify-center  items-center mt-2  ">
           <input
             type="text"
             placeholder="E-mail"
-            className="hover:border-yellow-300 text-white RobotoFont outline-none border-2 border-gray-300 bg-transparent px-5 h-[50px] sm:w-[320px] "
+            className="hover:border-yellow-300 text-white RobotoFont outline-none border-2 border-gray-300 bg-transparent px-5 h-[50px] w-[240px] sm:w-[320px] "
           />
-          <BuyButton content={"SEND"} className="w-20 " />
+          <BuyButton content={"SEND"} reverse={"buyButtonReverse"} className="w-20 " />
         </div>
       </div>
       <img

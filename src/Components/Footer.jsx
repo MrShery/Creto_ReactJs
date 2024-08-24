@@ -6,7 +6,7 @@ import { RxInstagramLogo } from "react-icons/rx";
 
 function Footer() {
   return (
-    <footer className="w-full h-[100vh] flex flex-col  items-center mt-[380px]">
+    <footer className="w-full h-[100vh] flex flex-col  items-center mt-10 md:mt-[380px]">
       <div className="w-[90%] flex flex-wrap sm:flex-wrap lg:flex-nowrap md:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap  lg:justify-around xl:justify-around 2xl:justify-around  2xl:gap-20 xl:gap-20 lg:gap-20 md:gap-5 sm:gap-5 gap-10">
         <div className="w-fit">
           <h2 className=" pb-5 RobotoFont font-semibold tracking-[2px]">

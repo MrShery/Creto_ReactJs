@@ -3,7 +3,7 @@ import { FaHeart, FaPhone, FaShoppingCart, FaUser } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
  const  Header = () => {
     return (
-      <header className="lg:w-[88%] px-2 py-4 border-b flex justify-between ">
+      <header className="lg:w-[88%] px-2 py-4 border-b sm:flex justify-between ">
         <div className="flex gap-7">
           <div className="flex items-center gap-2">
             <FaPhone className="text-yellow-300 text-[20px]" />
@@ -18,7 +18,7 @@ import { IoMdMail } from "react-icons/io";
             </h4>
           </div>
         </div>
-        <div className="flex gap-4 items-center">
+        <div className="flex hidden sm:block gap-4 items-center">
           <FaHeart className="text-gray-400 hover:text-yellow-300 transition-all cursor-pointer" />
           <FaUser className="text-gray-400  hover:text-yellow-300 transition-all cursor-pointer border-x text-[25px] px-1 py-0" />
           <FaShoppingCart className="text-gray-400 hover:text-yellow-300 transition-all cursor-pointer" />

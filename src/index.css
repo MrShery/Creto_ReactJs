@@ -125,6 +125,7 @@ body{
 /* <==========================Subscribe Section Reverse btn =======================> */
 .buyButton:hover::before {
   width: 105%;
+  height: 50vh;
 }
 .buyButtonReverse::before{
   width: 105%;
