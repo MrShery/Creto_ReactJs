@@ -12,7 +12,7 @@ export const NavBar = () => {
         {["home", "service", "shop", "gallery", "pages", "Contacts"].map(
           (elem, index) => (
             <li >
-              <a href="#" className=" navMenuItem   py-8 relative group uppercase hover:text-yellow-400 cursor-pointer font-normal text-[13px] RobotoFont">
+              <a href="#" className=" navMenuItem   sm:py-8 relative group uppercase hover:text-yellow-400 cursor-pointer font-normal text-[13px] RobotoFont">
                 <span
                   className={`absolute w-full transition scale-x-0 group-hover:scale-x-100 h-[3px] bg-yellow-400 top-0 `}
                 ></span>
