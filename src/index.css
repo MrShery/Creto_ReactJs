@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ================================Custom Transitions====================================> */
+@layer utilities {
+  .transition {
+    transition: 0.2s ease-in-out;
+  }
+  .scDotTransition {
+    transition: 0.3s ease-in-out;
+  }
+  .sliderLineTransition {
+    transition: 0.7s ease-in-out;
+  }
+  .newsTrasition{
+    transition:  3s ease-in;
+  }
+  .bannerTransition{
+    transition: all .5s;
+  }
+  /* ================================Custom Font============================================> */
+  .RobotoFont{
+  font-family: "Roboto Condensed";
+  }
+}
+body{
+  background-color: #FAFAFA;
+}
+
+.buyButton {
+  /* padding: 0.6em 1.8em; */
+  border: 2px solid #ffd910;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  color: black;
+  font-family: "Roboto Condensed";
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.buyButton::before {
+  content: "";
+  width: 0;
+  height: 350%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(135deg);
+  background: #ffd910;
+  transition: 0.3s ease;
+  display: block;
+  z-index: -1;
+}
+
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: #ffd910;
+  padding: 25px 25px;
+  color: black;
+  transition: all.3s;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 15px;
+  font-weight: bolder;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #000;
+  color: #ffffff;
+}
+/* <=======================================Advantage Section=======================================>  */
+.myMask::after{
+  content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    background-color: #fafafa;
+    height: 44px;
+    z-index: 2;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 25% 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 25% 100%);
+ 
+}
+.myMaskReverse::after{
+  transform: rotateY(180deg);
+  z-index: 20;
+}
+.myMaskReverse::before{
+  transform: rotateY(180deg);
+}
+
+.myMask::before{
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  background-color: #fafafa;
+  z-index: 2;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+.onlyTopMaks::after{
+  width: 0;
+}
+
+/* <========================================Product Card Ribbon========================================> */
+.ribbon {
+  --r: .6em; /* control the cutout */
+  border-block: .5em solid #0000; 
+  clip-path: polygon(100% 0,0 0,0 100%,100% 100%,calc(100% - var(--r)) calc(100% - .25em),100% 50%,calc(100% - var(--r)) .25em);
+  /* the color  */
+
+}
+/* <==========================Subscribe Section Reverse btn =======================> */
+.buyButton:hover::before {
+  width: 105%;
+}
+.buyButtonReverse::before{
+  width: 105%;
+}
+.buyButtonReverse:hover::before{
+  width: 0%;
+}
